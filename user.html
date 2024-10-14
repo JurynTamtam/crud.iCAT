@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>User Registration</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eaf5ea;
+}
+        header {
+            background-image: url("https://th.bing.com/th/id/OIP.vGv9zvlruJxqQ-bG1m8MbAHaEK?rs=1&pid=ImgDetMain");
+            background-size: cover;
+            background-repeat: repeat;
+            background-color: #333;
+            color:rgb(8, 7, 7);
+            text-align: center;
+            padding: 20px;
+        }
+        /* Footer Style */
+        .footer {
+            background-color: #070f07;
+            color: white;
+            text-align: center;
+            padding: 10px;    
+        }
+
+          nav{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 10px 40px;
+          color: white;
+          font-family: Arial, sans-serif;
+    
+        }
+        body{
+            background-color:rgb(248, 250, 249);
+        }
+        .btn{
+            margin-left: 5px;
+        }
+        form{
+            border-radius: 5px;
+            }
+             #subTitle{
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 20px;
+            text-align: center;
+      }
+     
+</style>
+</head>
+<header>
+    <nav>
+        <img src="images.jpg" alt="Logo" width="70" height="70" class="rounded-circle img border-4">
+        <b id="subTitle">ISPSC College Admission Test (ICAT)</b>
+    </nav>
+</header>
+<body>
+<!-- Modal body -->
+<div class="container mt-4 "> 
+<h2 id="m-title"><b>Application Form</b></h2><hr>
+<form id="profile-form" class="form-group" enctype="multipart/form-data">
+    <div class="modal-body bg-light">
+    <label for="lastname" class="form-label"><b>Lastname:</b> </label>
+    <input type="text" placeholder="Enter lastname" name="lastname" id="lastname_e" required class="form-control" >
+    <label for="firstname" class="form-label"><b>Firstname: </b></label>
+    <input type="text" placeholder="Enter firstname" name="firstname" required id="firstname_e" class="form-control" >
+    <label for="middlename" class="form-label"><b>Middlename:</b> </label>
+    <input type="text" placeholder="Enter middlename" name="middlename" required id="middlename_e" class="form-control" >
+    <label for="lrn" class="form-label"><b>LRN No.: </b></label>
+    <input type="varchar" placeholder="Enter LRN No." name="lrn" required id="lrn_e" class="form-control" > 
+    <label for="email" class="form-label"><b>Email:</b> </label>
+    <input type="email" placeholder="Enter Email Address" name="email" required id="email_e" class="form-control" >   
+    <label for="age" class="form-label"><b>Age: </b></label>
+    <input type="number" placeholder="Enter age" name="age" required id="age_e" class="form-control" >       
+    
+    <label for="sex" class="form-label"><b>Sex:</b></label><br>
+    <input type="radio" name="sex" id="sex_m" value="Male" required>
+    <label for="sex_m">Male</label><br>
+    <input type="radio" name="sex" id="sex_f" value="Female" required>
+    <label for="sex_f">Female</label><br>
+    
+    <label for="dob" class="form-label"><b>Date of Birth</b> </label>
+    <input type="date" placeholder="" name="dob" required id="dob_e" class="form-control" >
+    <label for="pob" class="form-label"><b>Place of Birth:</b> </label>
+    <input type="text" placeholder="Place of Birth" name="pob" required id="pob_e" class="form-control" >
+    <label for="address" class="form-label"><b>Permanent Address:</b> </label>
+    <input type="text" placeholder="Enter permanent address" name="address" required id="address_e" class="form-control" > 
+
+    <label for="mcmg_no"><b>Member of Cultural Minority Group:</b></label><br>
+    <input type="checkbox" name="mcmg" id="mcmg_no" value="No">
+    <label for="mcmg_no">No</label>
+    <input type="checkbox" name="mcmg" id="mcmg_yes" value="Yes">
+    <label for="mcmg_yes">Yes</label><br>
+    <label for="mcmg">If yes, specify:</label>
+    <input type="text" name="mcmg" id="mcmg_e"> <br><br>
+
+    <label for="citizenship" class="form-label"><b>Citizenship:</b> </label>
+    <input type="text" placeholder="Enter Citizenship"  name="citizenship" required id="citizenship_e"class="form-control" >
+    <label for="religion" class="form-label"><b>Religion:</b> </label>
+    <input type="text" placeholder="Enter Religion" name="religion" required id="religion_e" class="form-control">
+    <label for="number" class="form-label"><b>Number:</b> </label>
+    <input type="number" placeholder="Enter Contanct Number" name="number" required id="number_e" class="form-control">  
+      <br>
+    <label for="status" class="form-label"><b>Status of Study</b></label><br>
+    <input type="radio" name="status" id="status_senior" value="Currently Senior High School"  required>
+    <label for="status_senior">Currently Senior High School</label><br>
+    <input type="radio" name="status" id="status_graduate" value="High School Graduate/Transferee"  required>
+    <label for="status_graduate">High School Graduate/Transferee</label><br><br>
+
+
+    <b>For currently enrolled Senior High School students:</b>
+    <label for="sname" class="form-label">Full name of high school where you are currently enrolled (Do not abbreviate)</label>
+    <input type="text" placeholder="School name" name="sname" id="sname_e" class="form-control">  
+    <label for="yearcom" class="form-label">Month/Year Of Completion</label>
+    <input type="number" placeholder="Month/Year of Completion" name="yearcom"  id="yearcom_e" class="form-control">  
+    <label for="adname" class="form-label">Address Of School</label>
+    <input type="text" placeholder="Address of School" name="adname" id="adname_e" class="form-control"> 
+    <br>  
+
+    <b>For High School Graduate/Transferee:</b>
+    <label for="sname" class="form-label">Last School Attended</label>
+    <input type="text" placeholder="School name" name="sname" id="sname_e" class="form-control">  
+    <label for="yearcom" class="form-label">Month/Year Of Completion</label>
+    <input type="number" placeholder="Month/Year of Completion" name="yearcom"  id="yearcom_e" class="form-control">  
+    <label for="adname" class="form-label">Address Of School</label>
+    <input type="text" placeholder="Address of School" name="adname" id="adname_e" class="form-control">     
+    <br>  
+
+    <label for="campus"><b>Campus Applied For:</b></label><br>
+    <input type="checkbox" name="campus" id="campus_stamaria" value="Sta. Maria">
+    <label for="campus_stamaria">Sta. Maria</label>
+    <input type="checkbox" name="campus" id="campus_narvacan" value="Narvacan">
+    <label for="campus_narvacan">Narvacan</label>
+    <input type="checkbox" name="campus" id="campus_santiago" value="Santiago">
+    <label for="campus_santiago">Santiago</label><br>
+    <input type="checkbox" name="campus" id="campus_candon" value="Candon">
+    <label for="campus_candon">Candon</label>
+    <input type="checkbox" name="campus" id="campus_tagudin" value="Tagudin">
+    <label for="campus_tagudin">Tagudin</label>
+    <input type="checkbox" name="campus" id="campus_cervantes" value="Cervantes">
+    <label for="campus_cervantes">Cervantes</label>
+    <br><br>
+
+    <h6><b>Intended Course(Up to 2 choices only):</b></h6>
+    <label for="choice1" class="form-label">1st Choice: </label>
+    <input type="text" placeholder="" name="choice1" required id="choice1_e"><br>
+    <label for="choice2" class="form-label">2nd Choice: </label>
+    <input type="text" placeholder="" name="choice2" id="choice2_e">
+    <br>
+    <input type="hidden" name="profileID" id="profileID_c" value="0" class="form-control">
+    </div>
+
+    <!-- Modal footer -->
+    <div class="modal-footer">
+    <input type="submit" name="btn-saving" class="btn btn-primary" id="b-save" value="Save">
+    <button type="button" class="btn btn-danger" data-bs-dismiss="modal" id="btn-close">Reset</button>
+    </div>
+    </form>
+</div>
+<div class="footer mt-4">
+    <p><b>&copy; ICAT 2024</b></p>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+          
+        // when the SAVE CHANGES button is clicked
+        $('#profile-form').on("submit", function(event){
+            event.preventDefault();
+  
+            var profile_form = $("#profile-form").serialize(); 
+            $.ajax({
+                url:'https://bsit3rdyear.org/Worksheets/ws3-0/groupleadertamtam/crud/saving-profile.php',
+                method: 'POST',
+                data: profile_form,
+                success: function(response){ 
+                    var cur_btn = $("#b-save").val();
+                    if (cur_btn == "Save") {
+                        $("#profile-form")[0].reset();
+                        alert('Data submitted successfully!');
+                    }
+                }
+            });
+        });
+        
+          document.getElementById("btn-close").addEventListener("click", function() {
+            var confirmRes = confirm("Are you sure you want to reset?");
+            if (confirmRes) {
+              $("#profile-form")[0].reset();
+            }
+        });
+    });
+</script>
+</body>
+</html>

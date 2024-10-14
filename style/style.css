@@ -1,0 +1,89 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eaf5ea;
+}
+/*https://th.bing.com/th/id/OIP.vGv9zvlruJxqQ-bG1m8MbAHaEK?rs=1&pid=ImgDetMain*/
+header {
+    background-image: url("https://th.bing.com/th/id/OIP.Yc3B_ArnR10QxxBAtdzOlQHaEo?rs=1&pid=ImgDetMain");
+    background-size: cover;
+    background-repeat: repeat;
+    background-color: #333;
+    color:rgb(8, 7, 7);
+    text-align: center;
+    padding: 19px;
+    font-size: 17px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 15px;
+    background-color: #d5dbd5;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #0e0d0d;
+    text-decoration: none;
+    padding: 8px;
+}
+a:hover{
+    color: rgb(10, 10, 10);
+    font-size: 15px;
+}
+
+main {
+    padding: 20px;
+}
+
+#p{
+    font-size:15px;
+}
+
+h3 {
+    border-bottom: 2px solid #333;
+    font-size:25px;
+}
+footer {
+    background-color: #9bad9b;
+    color: rgb(8, 7, 7);
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+.table-container {
+    overflow-x: auto;
+    max-width: 100%;
+    white-space: nowrap;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    /* Other table styles */
+  }
+  
+@media screen and (max-width: 768px) {
+.body, .table-container{
+    width: 100%;
+
+}
+header, footer{
+    align-items: center;
+    width: 100%;
+}
+#subTitle{
+    width:100%;
+}
+}
